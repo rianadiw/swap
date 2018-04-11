@@ -6,9 +6,13 @@ Swap is space on a disk that is reserved to be used as virtual memory. When a Li
 
 First, download the main script:
 ```
-https://raw.githubusercontent.com/rianawb/swap/master/swap.sh -O swap
+wget https://raw.githubusercontent.com/rianawb/swap/master/swap.sh -O swap.sh
 ```
 Then simply run the file with this format:
 ```
 swap.sh
 ```
+## NOTE
+
+Default swap is 2 GB, you can change the values in swap.sh
+> dd if=/dev/zero of=/swapfile **bs=2048k** count=1000
