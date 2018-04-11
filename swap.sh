@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -f /swapfile ]; then
-        echo "Swap sudah dibuat"
+        echo "Error! Swap already exists"
 else
         dd if=/dev/zero of=/swapfile bs=2048k count=1000
         mkswap /swapfile
@@ -11,5 +11,5 @@ else
         free
 	chown root:root /swapfile
 	chmod 600 /swapfile
-        echo "Berhasil membuat swap"
+        echo "Successfully created swap file"
 fi
