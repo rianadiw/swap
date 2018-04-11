@@ -15,4 +15,3 @@ swap.sh
 #### NOTE
 
 Default swap is 2 GB, you can change the values in swap.sh
-> dd if=/dev/zero of=/swapfile **bs=2048k** count=1000
