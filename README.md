@@ -10,7 +10,7 @@ wget https://raw.githubusercontent.com/rianawb/swap/master/swap.sh -O swap.sh
 ```
 Then simply run the file with this format:
 ```
-swap.sh
+bash swap.sh
 ```
 #### NOTE
 
